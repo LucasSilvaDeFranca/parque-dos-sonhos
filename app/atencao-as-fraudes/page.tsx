@@ -28,6 +28,7 @@ export default function AtencaoAsFraudes() {
       }
       description="Alerta sobre páginas falsas em redes sociais e canais não autorizados em nome da Rede dos Sonhos."
       imageSrc="/images/site-atual/hero-panorama.jpg"
+      imageHint="Hotel Fazenda Parque dos Sonhos em Socorro-SP"
       imagePosition="center 30%"
     >
       <div className="warning">

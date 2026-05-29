@@ -60,7 +60,7 @@ export default function ContatoPage() {
           </>
         }
         description="Nossa equipe está pronta para te ajudar a planejar sua experiência no Parque dos Sonhos."
-        imageHint="Crianças aproveitando o Parque dos Sonhos"
+        imageHint="Crianças se divertindo nas atividades do Parque dos Sonhos"
         imageSrc="/images/site-atual/criancas.jpg"
         imagePosition="center 30%"
       />

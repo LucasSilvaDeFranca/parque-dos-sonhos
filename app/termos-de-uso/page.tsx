@@ -18,6 +18,7 @@ export default function TermosDeUso() {
       }
       description="Ao acessar este site, você concorda em cumprir os termos abaixo, todas as leis e regulamentos aplicáveis."
       imageSrc="/images/site-atual/hero-panorama.jpg"
+      imageHint="Hotel Fazenda Parque dos Sonhos em Socorro-SP"
       imagePosition="center 30%"
     >
       <p>

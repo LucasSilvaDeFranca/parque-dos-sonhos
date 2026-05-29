@@ -51,7 +51,7 @@ export default function DayUsePage() {
           </>
         }
         description="Duas formas de aproveitar o parque por um dia: o pacote Day Use, com refeições e atividades inclusas, ou a Visitação com tarifário avulso por atividade."
-        imageHint="Visitantes em Day Use no Parque dos Sonhos"
+        imageHint="Visitantes na bóia-cross durante o Day Use no Parque dos Sonhos"
         imageSrc="/images/site-atual/day-use.jpg"
         imagePosition="center 40%"
       />

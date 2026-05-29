@@ -43,7 +43,7 @@ export default function AtividadesPage() {
           </>
         }
         description="O Parque dos Sonhos é reconhecido como o maior complexo de aventura de Socorro-SP. Aqui, você encontra atividades para todos os níveis, sempre com acompanhamento e segurança certificada."
-        imageHint="Tirolesa Voadora do Parque dos Sonhos"
+        imageHint="Tirolesa Voadora de 1km sobre o vale do Rio Cachoeirinha no Parque dos Sonhos"
         imageSrc="/images/site-atual/tirolesa-voadora.jpg"
         imagePosition="center 35%"
       />

@@ -49,6 +49,7 @@ export default function PassaporteDosSonhos() {
       }
       description="Durante a sua hospedagem em qualquer hotel da Rede dos Sonhos, você usufrui do day-use nos outros quatro sem custo adicional."
       imageSrc="/images/site-atual/hero-panorama.jpg"
+      imageHint="Vista panorâmica do Hotel Fazenda Parque dos Sonhos"
       imagePosition="center 40%"
     >
       <p>

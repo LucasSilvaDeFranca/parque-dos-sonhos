@@ -18,6 +18,7 @@ export default function PoliticaDePrivacidade() {
       }
       description="Como coletamos, usamos e protegemos as informações que você nos confia ao navegar em nosso site."
       imageSrc="/images/site-atual/hero-panorama.jpg"
+      imageHint="Hotel Fazenda Parque dos Sonhos em Socorro-SP"
       imagePosition="center 35%"
       updatedAt="Janeiro de 2022"
     >

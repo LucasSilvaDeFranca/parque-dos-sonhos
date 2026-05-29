@@ -112,7 +112,7 @@ export default function GastronomiaPage() {
           </>
         }
         description="Pensão completa com sabor de fazenda. Quatro refeições diárias preparadas com produtos da própria fazenda e da horta orgânica, sob supervisão de uma nutricionista — sempre respeitando a cultura regional."
-        imageHint="Restaurante do Parque dos Sonhos"
+        imageHint="Restaurante do Parque dos Sonhos com fogão a lenha e culinária caipira"
         imageSrc="/images/site-atual/restaurante.jpg"
         imagePosition="center 50%"
       />

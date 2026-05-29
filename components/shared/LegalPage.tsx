@@ -5,6 +5,7 @@ interface Props {
   title: React.ReactNode;
   description?: React.ReactNode;
   imageSrc?: string;
+  imageHint?: string;
   imagePosition?: string;
   /** Atualização da política/termo (ex.: "Janeiro de 2022") */
   updatedAt?: string;
@@ -21,6 +22,7 @@ export function LegalPage({
   title,
   description,
   imageSrc,
+  imageHint,
   imagePosition,
   updatedAt,
   children,
@@ -32,6 +34,7 @@ export function LegalPage({
         title={title}
         description={description}
         imageSrc={imageSrc}
+        imageHint={imageHint}
         imagePosition={imagePosition}
       />
       <section className="bg-pds-bone py-20 lg:py-28">

@@ -37,7 +37,7 @@ export default function OHotelPage() {
           </>
         }
         description="Um hotel fazenda voltado ao ecoturismo, turismo de aventura e turismo rural. Situado na divisa entre São Paulo e Minas Gerais, em 20 alqueires de cenário exuberante com cachoeiras, trilhas, animais e grutas."
-        imageHint="Vista aérea do Hotel Fazenda Parque dos Sonhos"
+        imageHint="Vista aérea do Hotel Fazenda Parque dos Sonhos em Socorro-SP"
         imageSrc="/images/site-atual/o-hotel-hero.jpg"
         imagePosition="center 50%"
       />

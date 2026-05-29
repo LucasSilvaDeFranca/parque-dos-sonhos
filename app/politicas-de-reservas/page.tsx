@@ -20,6 +20,7 @@ export default function PoliticasDeReservas() {
       }
       description="Condições contratuais que regem sua hospedagem. Leia com atenção antes de confirmar sua reserva."
       imageSrc="/images/site-atual/hero-panorama.jpg"
+      imageHint="Hotel Fazenda Parque dos Sonhos em Socorro-SP"
       imagePosition="center 35%"
     >
       <h2>Hospedagem</h2>

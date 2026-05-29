@@ -23,7 +23,7 @@ export default function AcomodacoesPage() {
           </>
         }
         description="Nossas acomodações foram pensadas para oferecer descanso e tranquilidade após um dia repleto de experiências. Com 9 tipos diferentes — para casais, famílias e grupos — cada espaço proporciona conforto, praticidade e conexão com a natureza."
-        imageHint="Suíte do Parque dos Sonhos"
+        imageHint="Suíte com vista para a natureza no Hotel Fazenda Parque dos Sonhos"
         imageSrc="/images/site-atual/quarto-suite.jpg"
         imagePosition="center 40%"
       />
