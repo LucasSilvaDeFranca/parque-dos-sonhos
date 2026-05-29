@@ -54,11 +54,13 @@ export const NAV: readonly NavItem[] = [
     href: "https://book.omnibees.com/chain/6432/hotel/11000?q=11000&lang=pt-BR&currencyId=16",
     external: true,
   },
+  { label: "Portal do Hóspede", href: "/portal-do-hospede" },
   { label: "Contato", href: "/contato" },
 ];
 
 /** Links institucionais/legais que ficam no rodapé. */
 export const LEGAL_NAV = [
+  { label: "Portal do Hóspede", href: "/portal-do-hospede" },
   { label: "Passaporte dos Sonhos", href: "/passaporte-dos-sonhos" },
   { label: "Políticas de Reservas", href: "/politicas-de-reservas" },
   { label: "Atenção às Fraudes", href: "/atencao-as-fraudes" },
