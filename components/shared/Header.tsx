@@ -36,9 +36,9 @@ export function Header() {
             : "bg-transparent"
         )}
       >
-        <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
-          <div className="flex items-center justify-between h-[72px] md:h-[84px]">
-            <Link href="/" className="flex items-center" aria-label="Início">
+        <div className="mx-auto max-w-[1400px] px-5 sm:px-8 lg:px-10 xl:px-12">
+          <div className="flex items-center justify-between gap-6 h-[72px] md:h-[84px]">
+            <Link href="/" className="flex items-center shrink-0" aria-label="Início">
               <Logo
                 tone={scrolled ? "dark" : "light"}
                 size="md"
@@ -46,10 +46,10 @@ export function Header() {
               />
             </Link>
 
-            <nav className="hidden lg:flex items-center gap-1">
+            <nav className="hidden xl:flex items-center gap-0.5 mx-auto">
               {NAV.map((item) => {
                 const className = clsx(
-                  "px-4 py-2 rounded-full text-[0.86rem] font-medium tracking-tight transition-colors",
+                  "px-3 py-2 rounded-full text-[0.84rem] font-medium tracking-tight whitespace-nowrap transition-colors",
                   scrolled
                     ? "text-pds-graphite hover:text-pds-fire hover:bg-pds-cream/60"
                     : "text-white/95 hover:text-white hover:bg-white/10"
@@ -76,7 +76,7 @@ export function Header() {
               })}
             </nav>
 
-            <div className="hidden lg:flex items-center gap-3">
+            <div className="hidden xl:flex items-center gap-3 shrink-0">
               <Button
                 href={CONTACT.whatsapp.href}
                 external
@@ -96,7 +96,7 @@ export function Header() {
               type="button"
               onClick={() => setOpen(true)}
               className={clsx(
-                "lg:hidden p-2 -mr-2 rounded-full transition-colors",
+                "xl:hidden p-2 -mr-2 rounded-full transition-colors",
                 scrolled
                   ? "text-pds-graphite hover:bg-pds-cream"
                   : "text-white hover:bg-white/10"
@@ -112,7 +112,7 @@ export function Header() {
       {/* Mobile menu */}
       <div
         className={clsx(
-          "fixed inset-0 z-[60] lg:hidden transition-all duration-500",
+          "fixed inset-0 z-[60] xl:hidden transition-all duration-500",
           open
             ? "opacity-100 pointer-events-auto"
             : "opacity-0 pointer-events-none"
