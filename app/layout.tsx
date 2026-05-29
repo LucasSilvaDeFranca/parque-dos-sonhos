@@ -1,9 +1,13 @@
 import type { Metadata } from "next";
 import { Fraunces, Plus_Jakarta_Sans } from "next/font/google";
+import { GoogleTagManager } from "@next/third-parties/google";
 import "./globals.css";
 import { Header } from "@/components/shared/Header";
 import { Footer } from "@/components/shared/Footer";
 import { WhatsAppFloat } from "@/components/shared/WhatsAppFloat";
+import { MetaPixel } from "@/components/shared/MetaPixel";
+
+const GTM_ID = "GTM-T3KFW32";
 
 const fraunces = Fraunces({
   variable: "--font-fraunces",
@@ -54,7 +58,9 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="pt-BR" className={`${fraunces.variable} ${jakarta.variable}`}>
+      <GoogleTagManager gtmId={GTM_ID} />
       <body className="min-h-screen flex flex-col antialiased bg-pds-bone text-pds-ink">
+        <MetaPixel />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
