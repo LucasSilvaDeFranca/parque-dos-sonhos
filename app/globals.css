@@ -1,0 +1,298 @@
+@import "tailwindcss";
+
+/* ─── Design tokens ─── Parque dos Sonhos */
+@theme {
+  /* Brand — verde mata profundo (institucional) */
+  --color-pds-green-darkest: #0B1F12;
+  --color-pds-green-deep:    #143A1F;
+  --color-pds-green:         #1F5C2E;
+  --color-pds-green-mid:     #2E7A3F;
+  --color-pds-green-light:   #5BA060;
+  --color-pds-green-soft:    #C8DCC1;
+
+  /* Accent — laranja-aventura (energia, adrenalina) */
+  --color-pds-fire:          #D94B1F;
+  --color-pds-fire-light:    #E87344;
+  --color-pds-amber:         #E8A53A;
+  --color-pds-amber-light:   #F2C36A;
+
+  /* Água — turquesa cachoeira */
+  --color-pds-water:         #2F8C8E;
+  --color-pds-water-light:   #6FB5B5;
+
+  /* Neutros */
+  --color-pds-cream:         #F6EFDF;
+  --color-pds-sand:          #EFE3C8;
+  --color-pds-bone:          #FBF8F0;
+  --color-pds-ink:           #0B1410;
+  --color-pds-graphite:      #1A2A1F;
+  --color-pds-stone:         #4F5B53;
+  --color-pds-mist:          #8A968F;
+  --color-pds-line:          #E2DCC8;
+
+  /* Fonts */
+  --font-display: var(--font-fraunces), "Fraunces", "Cormorant Garamond", Georgia, serif;
+  --font-body:    var(--font-jakarta), "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
+
+  /* Animations */
+  --animate-fade-up:    fade-up 0.8s cubic-bezier(.22,1,.36,1) both;
+  --animate-fade-in:    fade-in 0.7s ease-out both;
+  --animate-slow-zoom:  slow-zoom 18s ease-out infinite alternate;
+  --animate-marquee:    marquee 40s linear infinite;
+  --animate-grain:      grain 0.18s steps(1) infinite;
+  --animate-float:      float 6s ease-in-out infinite;
+}
+
+/* ─── Keyframes ─── */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(32px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes slow-zoom {
+  from { transform: scale(1); }
+  to   { transform: scale(1.08); }
+}
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+@keyframes grain {
+  0%, 100% { transform: translate(0, 0); }
+  10% { transform: translate(-2%, -3%); }
+  20% { transform: translate(3%, 2%); }
+  30% { transform: translate(-1%, 4%); }
+  40% { transform: translate(4%, -1%); }
+  50% { transform: translate(-3%, 3%); }
+  60% { transform: translate(2%, -4%); }
+  70% { transform: translate(-4%, 1%); }
+  80% { transform: translate(3%, -2%); }
+  90% { transform: translate(-1%, -3%); }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+/* ─── Base ─── */
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-pds-ink);
+  background-color: var(--color-pds-bone);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-display);
+  letter-spacing: -0.018em;
+  font-weight: 500;
+}
+
+/* ─── Grain overlay ─── */
+.grain::after {
+  content: '';
+  position: absolute;
+  inset: -200%;
+  width: 400%;
+  height: 400%;
+  pointer-events: none;
+  z-index: 2;
+  opacity: 0.045;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='250'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='250' height='250' filter='url(%23n)'/%3E%3C/svg%3E");
+  animation: var(--animate-grain);
+}
+
+/* ─── Hero overlays ─── */
+.hero-overlay {
+  background:
+    linear-gradient(180deg, rgba(11,20,16,0.20) 0%, rgba(11,20,16,0.35) 40%, rgba(11,20,16,0.85) 100%),
+    radial-gradient(120% 60% at 50% 100%, rgba(11,31,18,0.6) 0%, transparent 70%);
+}
+
+/* ─── Image placeholder ─── */
+.image-placeholder {
+  background:
+    radial-gradient(ellipse at top, #2E7A3F 0%, #1F5C2E 40%, #0B1F12 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgba(246, 239, 223, 0.65);
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+.image-placeholder::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    repeating-linear-gradient(
+      45deg,
+      transparent 0,
+      transparent 30px,
+      rgba(91, 160, 96, 0.08) 30px,
+      rgba(91, 160, 96, 0.08) 31px
+    );
+  pointer-events: none;
+}
+.image-placeholder > * { position: relative; z-index: 1; }
+
+/* ─── Decorative rules ─── */
+.rule-amber {
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--color-pds-amber) 50%, transparent);
+}
+
+/* ─── Marquee ─── */
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: var(--animate-marquee);
+}
+
+/* ─── Stagger ─── */
+.stagger > * { animation: var(--animate-fade-up); }
+.stagger > *:nth-child(1) { animation-delay: 0ms; }
+.stagger > *:nth-child(2) { animation-delay: 80ms; }
+.stagger > *:nth-child(3) { animation-delay: 160ms; }
+.stagger > *:nth-child(4) { animation-delay: 240ms; }
+.stagger > *:nth-child(5) { animation-delay: 320ms; }
+.stagger > *:nth-child(6) { animation-delay: 400ms; }
+
+/* ─── Focus ring ─── */
+*:focus-visible {
+  outline: 2px solid var(--color-pds-amber);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+::selection {
+  background: var(--color-pds-amber);
+  color: var(--color-pds-ink);
+}
+
+.tabular-nums { font-variant-numeric: tabular-nums; }
+
+/* ─── Legal prose (Termos, Privacidade, etc.) ─── */
+.legal-prose {
+  color: var(--color-pds-ink);
+  font-family: var(--font-body);
+  font-size: 1.02rem;
+  line-height: 1.75;
+}
+.legal-prose > * + * { margin-top: 1.1rem; }
+.legal-prose h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.55rem, 2.4vw, 1.95rem);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--color-pds-green-darkest);
+  margin-top: 3rem;
+  margin-bottom: 0.4rem;
+  position: relative;
+  padding-bottom: 0.6rem;
+}
+.legal-prose h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 3rem;
+  height: 2px;
+  background: var(--color-pds-amber);
+  border-radius: 2px;
+}
+.legal-prose h3 {
+  font-family: var(--font-display);
+  font-size: 1.18rem;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  color: var(--color-pds-green-deep);
+  margin-top: 1.8rem;
+  margin-bottom: 0.2rem;
+}
+.legal-prose p {
+  color: var(--color-pds-graphite);
+  text-wrap: pretty;
+}
+.legal-prose strong {
+  color: var(--color-pds-green-darkest);
+  font-weight: 600;
+}
+.legal-prose a {
+  color: var(--color-pds-fire);
+  text-decoration: underline;
+  text-decoration-color: rgba(217, 75, 31, 0.3);
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.2s;
+}
+.legal-prose a:hover {
+  text-decoration-color: var(--color-pds-fire);
+}
+.legal-prose ul,
+.legal-prose ol {
+  padding-left: 0;
+  list-style: none;
+}
+.legal-prose ul > li,
+.legal-prose ol > li {
+  position: relative;
+  padding-left: 1.6rem;
+  color: var(--color-pds-graphite);
+  margin-top: 0.55rem;
+}
+.legal-prose ul > li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.7rem;
+  width: 0.4rem;
+  height: 0.4rem;
+  background: var(--color-pds-amber);
+  border-radius: 50%;
+}
+.legal-prose ol { counter-reset: legal-counter; }
+.legal-prose ol > li { counter-increment: legal-counter; }
+.legal-prose ol > li::before {
+  content: counter(legal-counter);
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-pds-fire);
+  line-height: 1.9;
+}
+.legal-prose .callout {
+  margin-top: 1.8rem;
+  padding: 1.4rem 1.6rem;
+  background: var(--color-pds-cream);
+  border-left: 3px solid var(--color-pds-amber);
+  border-radius: 0 0.75rem 0.75rem 0;
+  color: var(--color-pds-graphite);
+  font-size: 0.98rem;
+}
+.legal-prose .callout strong { display: block; margin-bottom: 0.3rem; }
+.legal-prose .warning {
+  margin-top: 1.8rem;
+  padding: 1.4rem 1.6rem;
+  background: rgba(217, 75, 31, 0.06);
+  border-left: 3px solid var(--color-pds-fire);
+  border-radius: 0 0.75rem 0.75rem 0;
+  color: var(--color-pds-graphite);
+  font-size: 0.98rem;
+}
+.legal-prose .warning strong { color: var(--color-pds-fire); }

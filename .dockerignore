@@ -1,0 +1,43 @@
+# Dependências (reinstaladas no stage `deps`)
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Build artifacts (regerados no stage `builder`)
+.next
+out
+build
+*.tsbuildinfo
+next-env.d.ts
+
+# VCS e metadados
+.git
+.gitignore
+.gitattributes
+
+# Configs locais que não devem entrar no build
+.env
+.env.*
+.vercel
+.vscode
+.idea
+.DS_Store
+
+# Claude / planejamento (não usados em runtime)
+.claude
+AGENTS.md
+CLAUDE.md
+
+# Docs e o próprio Dockerfile
+README.md
+Dockerfile
+.dockerignore
+
+# Testes / cobertura (não há testes no projeto, mas previne futuro lixo)
+coverage
+**/*.test.ts
+**/*.test.tsx
+**/*.spec.ts
+**/*.spec.tsx
