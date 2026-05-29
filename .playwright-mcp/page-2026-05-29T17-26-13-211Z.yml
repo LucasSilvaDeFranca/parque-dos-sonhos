@@ -1,0 +1,335 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e4]:
+      - link "Início" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img "Hotel Fazenda Parque dos Sonhos — A Terra da Aventura" [ref=e7]
+      - navigation [ref=e8]:
+        - link "O Hotel" [ref=e9] [cursor=pointer]:
+          - /url: /o-hotel
+        - link "Acomodações" [ref=e10] [cursor=pointer]:
+          - /url: /acomodacoes
+        - link "Atividades" [ref=e11] [cursor=pointer]:
+          - /url: /atividades
+        - link "Gastronomia" [ref=e12] [cursor=pointer]:
+          - /url: /gastronomia
+        - link "Day Use & Visitação" [ref=e13] [cursor=pointer]:
+          - /url: /day-use
+        - link "Pacotes e Promoções" [ref=e14] [cursor=pointer]:
+          - /url: https://book.omnibees.com/chain/6432/hotel/11000?q=11000&lang=pt-BR&currencyId=16
+        - link "Contato" [ref=e15] [cursor=pointer]:
+          - /url: /contato
+      - generic [ref=e16]:
+        - link "WhatsApp" [ref=e17] [cursor=pointer]:
+          - /url: https://wa.me/5519981815870
+          - img [ref=e18]
+          - text: WhatsApp
+        - link "Reservar" [ref=e20] [cursor=pointer]:
+          - /url: /contato
+          - text: Reservar
+          - img [ref=e21]
+  - main [ref=e24]:
+    - generic [ref=e25]:
+      - img "Hotel Fazenda Parque dos Sonhos em Socorro-SP" [ref=e27]
+      - generic [ref=e29]:
+        - paragraph [ref=e30]: Portal do Hóspede
+        - heading "Bem-vindo à sua estadia no Parque dos Sonhos" [level=1] [ref=e32]:
+          - text: Bem-vindo à
+          - emphasis [ref=e33]: sua estadia
+          - text: no Parque dos Sonhos
+        - paragraph [ref=e34]: Atalhos rápidos para o que você mais usa durante a hospedagem — informações do quarto, cardápios, agendamento de atividades e canais oficiais.
+    - generic [ref=e36]:
+      - generic [ref=e37]:
+        - generic [ref=e38]:
+          - generic [ref=e39]: "01"
+          - heading "Comodidades do quarto" [level=2] [ref=e40]
+        - list [ref=e41]:
+          - listitem [ref=e42]:
+            - generic [ref=e43]:
+              - generic [ref=e44]:
+                - img [ref=e46]
+                - generic [ref=e50]: Em breve
+              - generic [ref=e51]: Wi-Fi
+          - listitem [ref=e52]:
+            - link "Chromecast" [ref=e53] [cursor=pointer]:
+              - /url: http://tvshare.me
+              - generic [ref=e54]:
+                - img [ref=e56]
+                - img [ref=e60]
+              - generic [ref=e63]: Chromecast
+          - listitem [ref=e64]:
+            - generic [ref=e65]:
+              - generic [ref=e66]:
+                - img [ref=e68]
+                - generic [ref=e70]: Em breve
+              - generic [ref=e71]: Ramais
+          - listitem [ref=e72]:
+            - link "Ar condicionado" [ref=e73] [cursor=pointer]:
+              - /url: https://parquedossonhos.myguest.digital/texto/1168
+              - generic [ref=e74]:
+                - img [ref=e76]
+                - img [ref=e89]
+              - generic [ref=e92]: Ar condicionado
+          - listitem [ref=e93]:
+            - link "Frigobar" [ref=e94] [cursor=pointer]:
+              - /url: https://parquedossonhos.myguest.digital/texto/1169
+              - generic [ref=e95]:
+                - img [ref=e97]
+                - img [ref=e99]
+              - generic [ref=e102]: Frigobar
+          - listitem [ref=e103]:
+            - link "Canais de TV" [ref=e104] [cursor=pointer]:
+              - /url: https://parquedossonhos.myguest.digital/texto/1171
+              - generic [ref=e105]:
+                - img [ref=e107]
+                - img [ref=e110]
+              - generic [ref=e113]: Canais de TV
+          - listitem [ref=e114]:
+            - link "Toalhas" [ref=e115] [cursor=pointer]:
+              - /url: https://parquedossonhos.myguest.digital/texto/1173
+              - generic [ref=e116]:
+                - img [ref=e118]
+                - img [ref=e121]
+              - generic [ref=e124]: Toalhas
+      - generic [ref=e125]:
+        - generic [ref=e126]:
+          - generic [ref=e127]: "02"
+          - heading "Gastronomia" [level=2] [ref=e128]
+        - list [ref=e129]:
+          - listitem [ref=e130]:
+            - link "Refeições" [ref=e131] [cursor=pointer]:
+              - /url: https://parquedossonhos.myguest.digital/texto/1170
+              - generic [ref=e132]:
+                - img [ref=e134]
+                - img [ref=e139]
+              - generic [ref=e142]: Refeições
+          - listitem [ref=e143]:
+            - link "Cardápio de bebidas" [ref=e144] [cursor=pointer]:
+              - /url: https://parquedossonhos.myguest.digital/texto/1163
+              - generic [ref=e145]:
+                - img [ref=e147]
+                - img [ref=e150]
+              - generic [ref=e153]: Cardápio de bebidas
+          - listitem [ref=e154]:
+            - link "Carta de vinhos" [ref=e155] [cursor=pointer]:
+              - /url: https://www.canva.com/design/DAGrYdFth0w/
+              - generic [ref=e156]:
+                - img [ref=e158]
+                - img [ref=e160]
+              - generic [ref=e163]: Carta de vinhos
+          - listitem [ref=e164]:
+            - link "Horários" [ref=e165] [cursor=pointer]:
+              - /url: https://parquedossonhos.myguest.digital/texto/1166
+              - generic [ref=e166]:
+                - img [ref=e168]
+                - img [ref=e171]
+              - generic [ref=e174]: Horários
+      - generic [ref=e175]:
+        - generic [ref=e176]:
+          - generic [ref=e177]: "03"
+          - heading "Atividades & reservas" [level=2] [ref=e178]
+        - list [ref=e179]:
+          - listitem [ref=e180]:
+            - link "Agendamento de atividades" [ref=e181] [cursor=pointer]:
+              - /url: https://atividades.parquedossonhos.com.br
+              - generic [ref=e182]:
+                - img [ref=e184]
+                - img [ref=e187]
+              - generic [ref=e190]: Agendamento de atividades
+          - listitem [ref=e191]:
+            - link "Passaporte dos Sonhos" [ref=e192] [cursor=pointer]:
+              - /url: https://atividades.parquedossonhos.com.br/passaporte-dos-sonhos
+              - generic [ref=e193]:
+                - img [ref=e195]
+                - img [ref=e198]
+              - generic [ref=e201]: Passaporte dos Sonhos
+          - listitem [ref=e202]:
+            - link "Mapa do hotel" [ref=e203] [cursor=pointer]:
+              - /url: https://parquedossonhos.myguest.digital/arquivo/1160
+              - generic [ref=e204]:
+                - img [ref=e206]
+                - img [ref=e208]
+              - generic [ref=e211]: Mapa do hotel
+          - listitem [ref=e212]:
+            - generic [ref=e213]:
+              - generic [ref=e214]:
+                - img [ref=e216]
+                - generic [ref=e218]: Em breve
+              - generic [ref=e219]: Sauna
+          - listitem [ref=e220]:
+            - link "Passeio de quadriciclo" [ref=e221] [cursor=pointer]:
+              - /url: https://m8segurancaeaventura.com.br/
+              - generic [ref=e222]:
+                - img [ref=e224]
+                - img [ref=e229]
+              - generic [ref=e232]: Passeio de quadriciclo
+          - listitem [ref=e233]:
+            - link "Turismo na cidade" [ref=e234] [cursor=pointer]:
+              - /url: https://parquedossonhos.myguest.digital/texto/1181
+              - generic [ref=e235]:
+                - img [ref=e237]
+                - img [ref=e240]
+              - generic [ref=e243]: Turismo na cidade
+      - generic [ref=e244]:
+        - generic [ref=e245]:
+          - generic [ref=e246]: "04"
+          - heading "Informações & políticas" [level=2] [ref=e247]
+        - list [ref=e248]:
+          - listitem [ref=e249]:
+            - link "Informativo ao hóspede" [ref=e250] [cursor=pointer]:
+              - /url: https://parquedossonhos.myguest.digital/texto/1158
+              - generic [ref=e251]:
+                - img [ref=e253]
+                - img [ref=e255]
+              - generic [ref=e258]: Informativo ao hóspede
+          - listitem [ref=e259]:
+            - link "Faça seu cadastro" [ref=e260] [cursor=pointer]:
+              - /url: https://parquedossonhos.checkinonline.com.br/
+              - generic [ref=e261]:
+                - img [ref=e263]
+                - img [ref=e267]
+              - generic [ref=e270]: Faça seu cadastro
+          - listitem [ref=e271]:
+            - link "Segurança" [ref=e272] [cursor=pointer]:
+              - /url: https://parquedossonhos.myguest.digital/texto/1162
+              - generic [ref=e273]:
+                - img [ref=e275]
+                - img [ref=e278]
+              - generic [ref=e281]: Segurança
+          - listitem [ref=e282]:
+            - link "Política pet friendly" [ref=e283] [cursor=pointer]:
+              - /url: https://parquedossonhos.myguest.digital/texto/1172
+              - generic [ref=e284]:
+                - img [ref=e286]
+                - img [ref=e291]
+              - generic [ref=e294]: Política pet friendly
+          - listitem [ref=e295]:
+            - link "Acessibilidade" [ref=e296] [cursor=pointer]:
+              - /url: https://parquedossonhos.myguest.digital/texto/1174
+              - generic [ref=e297]:
+                - img [ref=e299]
+                - img [ref=e305]
+              - generic [ref=e308]: Acessibilidade
+          - listitem [ref=e309]:
+            - link "Sustentabilidade" [ref=e310] [cursor=pointer]:
+              - /url: https://parquedossonhos.myguest.digital/texto/1175
+              - generic [ref=e311]:
+                - img [ref=e313]
+                - img [ref=e316]
+              - generic [ref=e319]: Sustentabilidade
+          - listitem [ref=e320]:
+            - link "Pesquisa de segurança" [ref=e321] [cursor=pointer]:
+              - /url: https://forms.gle/ts5hFNEp6tUaban48
+              - generic [ref=e322]:
+                - img [ref=e324]
+                - img [ref=e327]
+              - generic [ref=e330]: Pesquisa de segurança
+      - generic [ref=e331]:
+        - generic [ref=e332]:
+          - generic [ref=e333]: "05"
+          - heading "Redes sociais" [level=2] [ref=e334]
+        - list [ref=e335]:
+          - listitem [ref=e336]:
+            - link "Instagram" [ref=e337] [cursor=pointer]:
+              - /url: https://www.instagram.com/parquedossonhos
+              - generic [ref=e338]:
+                - img [ref=e340]
+                - img [ref=e343]
+              - generic [ref=e346]: Instagram
+          - listitem [ref=e347]:
+            - link "Facebook" [ref=e348] [cursor=pointer]:
+              - /url: https://www.facebook.com/ParquedosSonhos/
+              - generic [ref=e349]:
+                - img [ref=e351]
+                - img [ref=e353]
+              - generic [ref=e356]: Facebook
+  - contentinfo [ref=e357]:
+    - generic [ref=e358]:
+      - generic [ref=e359]:
+        - generic [ref=e360]:
+          - img "Hotel Fazenda Parque dos Sonhos — A Terra da Aventura" [ref=e362]
+          - paragraph [ref=e363]: O maior complexo de aventura de Socorro-SP. Hotel fazenda certificado em segurança e acessibilidade, à divisa SP/MG.
+          - generic [ref=e364]:
+            - link "Instagram" [ref=e365] [cursor=pointer]:
+              - /url: https://www.instagram.com/parquedossonhos/
+              - img [ref=e366]
+            - link "Facebook" [ref=e370] [cursor=pointer]:
+              - /url: https://www.facebook.com/ParquedosSonhos/
+              - img [ref=e371]
+            - link "WhatsApp" [ref=e373] [cursor=pointer]:
+              - /url: https://wa.me/5519981815870
+              - img [ref=e374]
+        - generic [ref=e376]:
+          - heading "Navegar" [level=3] [ref=e377]
+          - list [ref=e378]:
+            - listitem [ref=e379]:
+              - link "O Hotel" [ref=e380] [cursor=pointer]:
+                - /url: /o-hotel
+            - listitem [ref=e381]:
+              - link "Acomodações" [ref=e382] [cursor=pointer]:
+                - /url: /acomodacoes
+            - listitem [ref=e383]:
+              - link "Atividades" [ref=e384] [cursor=pointer]:
+                - /url: /atividades
+            - listitem [ref=e385]:
+              - link "Gastronomia" [ref=e386] [cursor=pointer]:
+                - /url: /gastronomia
+            - listitem [ref=e387]:
+              - link "Day Use & Visitação" [ref=e388] [cursor=pointer]:
+                - /url: /day-use
+            - listitem [ref=e389]:
+              - link "Pacotes e Promoções" [ref=e390] [cursor=pointer]:
+                - /url: https://book.omnibees.com/chain/6432/hotel/11000?q=11000&lang=pt-BR&currencyId=16
+            - listitem [ref=e391]:
+              - link "Contato" [ref=e392] [cursor=pointer]:
+                - /url: /contato
+        - generic [ref=e393]:
+          - heading "Institucional" [level=3] [ref=e394]
+          - list [ref=e395]:
+            - listitem [ref=e396]:
+              - link "Passaporte dos Sonhos" [ref=e397] [cursor=pointer]:
+                - /url: /passaporte-dos-sonhos
+            - listitem [ref=e398]:
+              - link "Políticas de Reservas" [ref=e399] [cursor=pointer]:
+                - /url: /politicas-de-reservas
+            - listitem [ref=e400]:
+              - link "Atenção às Fraudes" [ref=e401] [cursor=pointer]:
+                - /url: /atencao-as-fraudes
+            - listitem [ref=e402]:
+              - link "Termos de Uso" [ref=e403] [cursor=pointer]:
+                - /url: /termos-de-uso
+            - listitem [ref=e404]:
+              - link "Política de Privacidade" [ref=e405] [cursor=pointer]:
+                - /url: /politica-de-privacidade
+        - generic [ref=e406]:
+          - heading "Telefones" [level=3] [ref=e407]
+          - list [ref=e408]:
+            - listitem [ref=e409]:
+              - img [ref=e410]
+              - link "Reservas (19) 3895-3161" [ref=e412] [cursor=pointer]:
+                - /url: tel:+551938953161
+                - generic [ref=e413]: Reservas
+                - text: (19) 3895-3161
+            - listitem [ref=e414]:
+              - img [ref=e415]
+              - link "WhatsApp · Informações (19) 9 8181-5870" [ref=e417] [cursor=pointer]:
+                - /url: https://wa.me/5519981815870
+                - generic [ref=e418]: WhatsApp · Informações
+                - text: (19) 9 8181-5870
+      - generic [ref=e419]:
+        - generic [ref=e420]:
+          - generic [ref=e421]: Certificações
+          - generic [ref=e422]:
+            - generic [ref=e424]: ABNT NBR ISO 21101
+            - generic [ref=e425]: ·
+            - generic [ref=e426]: Segurança em Aventura
+          - generic [ref=e427]:
+            - generic [ref=e429]: ABNT NBR 9050
+            - generic [ref=e430]: ·
+            - generic [ref=e431]: Acessibilidade
+        - paragraph [ref=e432]: © 2026 Hotel Fazenda Parque dos Sonhos · Socorro/SP · CNPJ disponível sob consulta
+  - link "Falar no WhatsApp":
+    - /url: https://wa.me/5519981815870
+    - generic:
+      - img
+      - generic: Fale no WhatsApp
