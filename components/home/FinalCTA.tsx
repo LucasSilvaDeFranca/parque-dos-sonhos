@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/Button";
-import { CONTACT } from "@/lib/constants";
+import { CONTACT, BOOKING_URL } from "@/lib/constants";
 
 export function FinalCTA() {
   return (
@@ -35,7 +35,13 @@ export function FinalCTA() {
         </p>
 
         <div className="mt-12 flex flex-wrap gap-4 justify-center">
-          <Button href="/contato" variant="primary" size="lg" withIcon>
+          <Button
+            href={BOOKING_URL}
+            external
+            variant="primary"
+            size="lg"
+            withIcon
+          >
             Reservar agora
           </Button>
           <Button

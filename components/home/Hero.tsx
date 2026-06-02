@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/Button";
-import { CONTACT, STATS } from "@/lib/constants";
+import { CONTACT, STATS, BOOKING_URL } from "@/lib/constants";
 import { ChevronDown } from "lucide-react";
 import { HeroSlideshow, type HeroSlide } from "./HeroSlideshow";
 
@@ -69,7 +69,13 @@ export function Hero() {
           </p>
 
           <div className="mt-10 flex flex-wrap gap-3 sm:gap-4">
-            <Button href="/contato" variant="primary" size="lg" withIcon>
+            <Button
+              href={BOOKING_URL}
+              external
+              variant="primary"
+              size="lg"
+              withIcon
+            >
               Reservar agora
             </Button>
             <Button

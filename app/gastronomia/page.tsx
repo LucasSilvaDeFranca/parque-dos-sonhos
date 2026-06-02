@@ -4,6 +4,7 @@ import { PageHero } from "@/components/shared/PageHero";
 import { Button } from "@/components/ui/Button";
 import { Flame, Sprout, Wheat, Cookie, Clock, ImageIcon } from "lucide-react";
 import { MEALS, RESTAURANT_INTRO, type Meal } from "@/lib/content/gastronomy";
+import { BOOKING_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Gastronomia — Sabor de fazenda no fogão a lenha",
@@ -240,7 +241,13 @@ export default function GastronomiaPage() {
           </div>
 
           <div className="mt-16">
-            <Button href="/contato" variant="primary" size="lg" withIcon>
+            <Button
+              href={BOOKING_URL}
+              external
+              variant="primary"
+              size="lg"
+              withIcon
+            >
               Reservar sua experiência
             </Button>
           </div>

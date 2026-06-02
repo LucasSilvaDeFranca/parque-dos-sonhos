@@ -6,6 +6,9 @@ export const SITE = {
   domain: "parquedossonhos.com.br",
 } as const;
 
+export const BOOKING_URL =
+  "https://book.omnibees.com/chain/6432/hotel/11000?q=11000&lang=pt-BR&currencyId=16&mobile=true";
+
 export const CONTACT = {
   whatsapp: {
     raw: "5519981815870",

@@ -3,6 +3,7 @@ import Image from "next/image";
 import { PageHero } from "@/components/shared/PageHero";
 import { Button } from "@/components/ui/Button";
 import { ACCOMMODATIONS } from "@/lib/content/accommodations";
+import { BOOKING_URL } from "@/lib/constants";
 import { Users, Check, Info } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -110,7 +111,12 @@ export default function AcomodacoesPage() {
                     )}
 
                     <div className="mt-8">
-                      <Button href="/contato" variant="primary" withIcon>
+                      <Button
+                        href={BOOKING_URL}
+                        external
+                        variant="primary"
+                        withIcon
+                      >
                         Reservar agora
                       </Button>
                     </div>

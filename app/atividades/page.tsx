@@ -8,7 +8,7 @@ import {
   type ActivityCategory,
 } from "@/lib/content/activities";
 import { Flame, Trees, Users, Tractor } from "lucide-react";
-import { CONTACT } from "@/lib/constants";
+import { CONTACT, BOOKING_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Atividades — Aventura, natureza e diversão",
@@ -191,7 +191,13 @@ export default function AtividadesPage() {
             Vamos planejar a sua aventura?
           </h2>
           <div className="mt-10 flex flex-wrap gap-3 justify-center">
-            <Button href="/contato" variant="primary" size="lg" withIcon>
+            <Button
+              href={BOOKING_URL}
+              external
+              variant="primary"
+              size="lg"
+              withIcon
+            >
               Reservar agora
             </Button>
             <Button

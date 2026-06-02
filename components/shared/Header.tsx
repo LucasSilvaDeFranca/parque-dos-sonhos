@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import { Menu, X, MessageCircle } from "lucide-react";
 import { Logo } from "./Logo";
 import { Button } from "@/components/ui/Button";
-import { NAV, CONTACT } from "@/lib/constants";
+import { NAV, CONTACT, BOOKING_URL } from "@/lib/constants";
 import { clsx } from "@/components/ui/clsx";
 
 export function Header() {
@@ -87,7 +87,13 @@ export function Header() {
                 <MessageCircle size={16} strokeWidth={2.2} />
                 WhatsApp
               </Button>
-              <Button href="/contato" variant="primary" size="sm" withIcon>
+              <Button
+                href={BOOKING_URL}
+                external
+                variant="primary"
+                size="sm"
+                withIcon
+              >
                 Reservar
               </Button>
             </div>
@@ -184,7 +190,8 @@ export function Header() {
               WhatsApp
             </Button>
             <Button
-              href="/contato"
+              href={BOOKING_URL}
+              external
               variant="primary"
               size="md"
               withIcon
